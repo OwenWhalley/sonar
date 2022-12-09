@@ -11,13 +11,4 @@ basic.forever(function () {
     PingUnit.Centimeters
     )
     basic.showNumber(distance_to_object)
-    if (distance_to_object > 4) {
-        strip.showColor(neopixel.colors(NeoPixelColors.Green))
-    }
-    if (distance_to_object <= 4) {
-        strip.showColor(neopixel.colors(NeoPixelColors.Blue))
-    }
-    if (distance_to_object <= 1) {
-        strip.showColor(neopixel.colors(NeoPixelColors.Red))
-    }
 })
